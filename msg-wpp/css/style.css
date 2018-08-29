@@ -1,0 +1,154 @@
+/*
+* lucas viga
+* github: 
+*/
+
+body{
+    padding: 45px 40px;
+    background-color: #ededed;
+}
+
+#app{
+    width: 100%;
+    color: rgb(48, 47, 47);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+#app a, a:visited{
+    text-decoration: none;
+    color: #ededed;
+}
+
+input {
+    border-radius: 3em;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 6px;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #128c7e;
+    outline: 0 none;
+    color: #7a7a7a;
+}
+
+#box-wpp{
+    display: none;
+    width: 230px;
+    height: auto;
+    position: fixed;
+    bottom: 8em;
+    left: 1em;
+    text-decoration: none;
+    padding: 1em;
+    background-color: #ECE5DD;
+    box-shadow: 0 0px 2px 2px rgb(211, 211, 211,0.8);
+    border-radius: 5px;
+}
+
+.box{
+    background-color: #ECE5DD;
+    padding:45px 40px;
+}
+
+.fa-paper-plane{
+    color: #fff;
+    border-radius: 100%;
+    padding: 8px;
+    background-color: #128c7e;
+    font-size: 16px;
+}
+
+.fa-paper-plane:hover{cursor:pointer; opacity: 0.6 !important;}
+
+.box-header{
+    background-color: #075E54;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 9px;
+}
+
+.box-header h2{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.box-body{
+    width: 250px;
+    padding-top: 7em;
+    padding-bottom: 1em;
+}
+
+.box-footer{
+    background-color: #128c7e;
+    text-align: center;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 9px;
+    font-size: 12px;
+}
+
+.box-footer :hover{
+    cursor: pointer;
+}
+
+/* btn whatsapp pulse*/
+
+.btn-wpp {
+    
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    text-decoration: none;
+    padding: 1em;
+    height: 45px;
+}
+
+
+.pulse {
+    display: block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(34, 190, 20, 0.4);
+    animation: pulse 2s infinite;
+  }
+ 
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(34, 190, 20, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(34, 190, 20, 0.4);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(34, 190, 20, 0.4);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(34, 190, 20, 0.4);
+      box-shadow: 0 0 0 0 rgba(34, 190, 20, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(34, 190, 20, 0.4);
+        box-shadow: 0 0 0 10px rgba(34, 190, 20, 0.4);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(34, 190, 20, 0.4);
+        box-shadow: 0 0 0 0 rgba(34, 190, 20, 0.4);
+    }
+  }
