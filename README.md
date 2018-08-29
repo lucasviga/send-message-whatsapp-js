@@ -5,7 +5,6 @@
 ## Preview
 
 ![GitHub Logo](/msg-wpp/img/screen.PNG)
-Format: ![example](url)
 
 ## how to use
 
