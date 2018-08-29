@@ -2,7 +2,7 @@
 
 "box-chat-simple" for sending messages to wpp using javascript.
 
-Preview
+## Preview
 
 ![GitHub Logo](/msg-wpp/img/screen.PNG)
 Format: ![example](url)
