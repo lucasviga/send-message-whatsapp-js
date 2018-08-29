@@ -1,3 +1,5 @@
 # send-message-whatsapp-js
 
-"box-plugin" simple for sending messages to wpp using javascript
+"box-chat-simple" for sending messages to wpp using javascript.
+
+see the example in msg-wpp/img/screen.png
