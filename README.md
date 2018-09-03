@@ -1,6 +1,6 @@
 # send-message-whatsapp-js
 
-"box-chat-simple" for sending messages to wpp using javascript.
+"simple-chat-box" for sending messages to wpp using javascript.
 
 ## Preview
 
@@ -9,10 +9,18 @@
 ## how to use
 
 ```html
-<div class="box-body">
-  <input id="msg" placeholder="digite sua mensagem">
-  <a><i class="fa fa-paper-plane" aria-hidden="true" onclick="send()"></i></a>
+<div id="box-wpp">
+    <div class="box-header"><h2>Contact</h2></div>  
+    <div class="box-body">
+        <input id="msg" placeholder="digite sua mensagem">
+        <a><i class="fa fa-paper-plane" aria-hidden="true" onclick="send()"></i></a>
+    </div>   
+    <div class="box-footer">
+        <a onclick="fechar()"><i class="fa fa-chevron-left" aria-hidden="true"></i> Fechar</a>
+    </div>
 </div>
+       
+<a><img src="img/icons8-whatsapp.svg" class="btn-wpp pulse" onclick="show()"></a>
 ```
 
 ```javascript
