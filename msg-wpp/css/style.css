@@ -1,6 +1,5 @@
 /*
 * lucas viga
-* github: 
 */
 
 body{
@@ -50,6 +49,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 .box{
     background-color: #ECE5DD;
     padding:45px 40px;
+    color:  #128c7e;
 }
 
 .fa-paper-plane{
@@ -102,7 +102,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     cursor: pointer;
 }
 
-/* btn whatsapp pulse*/
+/* btn whatsapp effect pulse*/
 
 .btn-wpp {
     
