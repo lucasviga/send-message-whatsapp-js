@@ -2,15 +2,18 @@
 * lucas viga
 */
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i');
+
 body{
     padding: 45px 40px;
-    background-color: #ededed;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 }
 
 #app{
     width: 100%;
-    color: rgb(48, 47, 47);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(48, 47, 47);   
     font-size: 16px;
 }
 
@@ -23,7 +26,8 @@ input {
     border-radius: 3em;
     border: 1px solid #fff;
     background-color: #fff;
-    padding: 6px;
+    padding: 16px;
+    width: 230px;
 }
 
 textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
@@ -34,22 +38,18 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 
 #box-wpp{
     display: none;
-    width: 230px;
+    max-width: 320px;
     height: auto;
     position: fixed;
-    bottom: 8em;
-    left: 1em;
+    bottom: 6.5em;
+    right: 1em;
     text-decoration: none;
     padding: 1em;
     background-color: #ECE5DD;
-    box-shadow: 0 0px 2px 2px rgb(211, 211, 211,0.8);
-    border-radius: 5px;
-}
-
-.box{
-    background-color: #ECE5DD;
-    padding:45px 40px;
-    color:  #128c7e;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
 }
 
 .fa-paper-plane{
@@ -63,7 +63,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 .fa-paper-plane:hover{cursor:pointer; opacity: 0.6 !important;}
 
 .box-header{
-    background-color: #075E54;
+    background-color: #128c7e;
     text-align: center;
     color: #fff;
     border-top-left-radius: 5px;
@@ -72,17 +72,45 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     margin-left: -16px;
     margin-right: -16px;
     padding: 9px;
+    display: inline-block;
+    width: 320px;
+    border-radius: 30px 30px 0 0;
+}
+
+.box-header clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .box-header h2{
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.contact-name {
+    float: left;
+}
+
+.close-btn {
+    float:right;
+    margin: 10px;
+}
+
+.close-btn:hover, .close-btn:link {
+    opacity: 0.5;
 }
 
 .box-body{
-    width: 250px;
+    max-width: 320px;
     padding-top: 7em;
     padding-bottom: 1em;
+}
+
+.box-body:last-child{
+    margin:0;
 }
 
 .box-footer{
@@ -108,7 +136,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     
     position: fixed;
     bottom: 1em;
-    left: 1em;
+    right: 1em;
     text-decoration: none;
     padding: 1em;
     height: 45px;
