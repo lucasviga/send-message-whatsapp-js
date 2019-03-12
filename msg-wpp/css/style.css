@@ -35,6 +35,7 @@ input {
     background-color: #fff;
     padding: 16px;
     width: 230px;
+    animation: move_top 1s;
 }
 
 textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
@@ -57,6 +58,8 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
+
+    animation: app_move_down 1s;
 }
 
 .fa-paper-plane{
@@ -99,6 +102,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 
 .contact-name {
     float: left;
+    animation: move_right 1s;
 }
 
 .close-btn {
@@ -194,3 +198,56 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
     background-color: #128c7e;
     
   }
+
+
+/*********************************
+EFFECT IN
+*********************************/
+
+@keyframes move_right {
+    0% {
+        opacity: 0;
+        transform: translateX(4rem);
+    }
+
+    85% {
+        transform: translateX(-0.4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move_top {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+
+    85% {
+        transform: translateY(-0.4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes app_move_down {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    85% {
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(2.5rem);
+    }
+}
