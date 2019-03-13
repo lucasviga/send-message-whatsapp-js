@@ -4,8 +4,8 @@ function show(){
   var div = document.getElementById('box-wpp');
   div.style.display = "block";
 
-  document.getElementsByClassName('pulse')[0].style.width="20px";
-  document.getElementsByClassName('pulse')[0].style.height="20px";
+  document.getElementsByClassName('pulse')[0].style.width="28px";
+  document.getElementsByClassName('pulse')[0].style.height="28px";
   
   var mobileDetect = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
